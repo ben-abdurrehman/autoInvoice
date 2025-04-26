@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+    /* @import "tailwindcss/preflight";
+    @import "tailwindcss/utilities"; 
+    @import "tailwindcss/components";  */
+
+
+.animated-background {
+    z-index: -10;
+    background: linear-gradient(
+      45deg,
+      #d1dcda,
+      #d5e1db,
+      #cab2b3,
+      #c7a1b8,
+      #eb7a62,
+      #acaadd,
+      #fbc9be,
+      #fdc9c0,
+      #fbbfb1,
+      #f5ad9c,
+      #f7b7a3,
+      #f7b7a3,
+      #eb7a62
+    );
+    background-size: 500% 500%;
+    animation: gradientAnimation 6s ease-in-out infinite;
+  }
+  
+  html, body{
+    scroll-behavior: smooth;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @font-face {
+    font-family: "SatoshiVariable";
+    src: url("../assets/fonts/Satoshi-Variable.woff2") format("woff");
+  }
+  
+  .Ellipse-bg {
+    background-image: url(/public/Ellipse-Bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .Caveat {
+    font-family: "Caveat", cursive;
+  }
+  
