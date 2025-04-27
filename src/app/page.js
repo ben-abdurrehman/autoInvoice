@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 
 import Hero from "@/components/ui/Hero";
 import HowWeWork from "@/components/ui/HowWeWork";
-import ContactUs from "@/components/ui/ContactUsSection";
+// import ContactUs from "@/components/ui/ContactUsSection";
 import Feature from '@/components/ui/Featured';
 import TimelineStorySection from "@/components/ui/StoryTimeline";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
@@ -23,7 +23,7 @@ export default function Home() {
       <TimelineStorySection />
       <div className="relative w-full h-auto">
           <HowWeWork />
-          <ContactUs />
+          {/* <ContactUs /> */}
       </div>
     </div>
   );
