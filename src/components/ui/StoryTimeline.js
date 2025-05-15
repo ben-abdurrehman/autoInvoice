@@ -3,9 +3,9 @@ import { events } from '@/data/objects/StoryTimline'
 
 const StoryTimeline = () => {
   return (
-    <section className="bg-gradient-to-br from-gray-900  via-gray-800 to-black py-8 text-white">
+    <section className="font-roboto bg-gradient-to-br from-slate-900  via-slate-950 to-black py-8 text-white">
       <div>
-        <h2 className="text-3xl font-bold text-center mb-8">How It Works</h2>
+        <h2 className="text-stroke font-poppins text-2xl md:text-8xl 2xl:text-9xl font-bold text-center mb-8">How It Works</h2>
         <p className="text-center text-lg mb-20">The four steps guidelines</p>
       </div>
       <div className="max-w-7xl mx-auto px-4">
@@ -22,7 +22,7 @@ const StoryTimeline = () => {
                 {index !== events.length - 1 && <hr className='relative mx-auto w-[2px] bg-white h-40' ></hr>}
               </div>
               {/* Content */}
-              <div className="mt-4 md:w-[48%] md:mt-0 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
+              <div className="mt-4 md:w-[48%] md:mt-0 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-400 bg-gray-100 dark:bg-transparent backdrop-blur-3xl">
                 <p className="text-sm text-gray-500 dark:text-gray-400">{event.time}</p>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{event.title}</h3>
                 <p className="mt-2 text-gray-700 dark:text-gray-300">{event.description}</p>

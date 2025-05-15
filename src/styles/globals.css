@@ -5,57 +5,67 @@
     @import "tailwindcss/components";  */
 
 
-.animated-background {
-    z-index: -10;
-    background: linear-gradient(
-      45deg,
-      #d1dcda,
-      #d5e1db,
-      #cab2b3,
-      #c7a1b8,
-      #eb7a62,
-      #acaadd,
-      #fbc9be,
-      #fdc9c0,
-      #fbbfb1,
-      #f5ad9c,
-      #f7b7a3,
-      #f7b7a3,
-      #eb7a62
-    );
-    background-size: 500% 500%;
-    animation: gradientAnimation 6s ease-in-out infinite;
-  }
-  
-  html, body{
-    scroll-behavior: smooth;
-  }
-  
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
+    :root {
+      --font-jost: 'Jost', sans-serif;
+      --font-poppins: 'Poppins', sans-serif;
+      --font-roboto: 'Roboto', sans-serif;
     }
-    50% {
-      background-position: 100% 50%;
+    
+    .font-jost {
+      font-family: var(--font-jost);
     }
-    100% {
-      background-position: 0% 50%;
+    
+    .font-poppins {
+      font-family: var(--font-poppins);
     }
+    .font-roboto {
+      font-family: var(--font-roboto);
+    }
+    
+.text-stroke{
+  -webkit-text-stroke: 1px #c9c9c9;
+  color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @font-face {
-    font-family: "SatoshiVariable";
-    src: url("../assets/fonts/Satoshi-Variable.woff2") format("woff");
+  50% {
+    background-position: 100% 50%;
   }
-  
-  .Ellipse-bg {
-    background-image: url(/public/Ellipse-Bg.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .Caveat {
-    font-family: "Caveat", cursive;
+}
+ @keyframes shadowGlow {
+  0% {
+    box-shadow: 0 0 1px 5px #ec4899;
   }
-  
+  25% {
+    box-shadow: 0 0 1px 5px #8b5cf6;
+  }
+  50% {
+    box-shadow: 0 0 1px 5px #f43f5e;
+  }
+  75% {
+    box-shadow: 0 0 1px 5px #8b5cf6;
+  }
+  100% {
+    box-shadow: 0 0 1px 5px #ec4899;
+  }
+}
+.animate-gradient-move {
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+}
+.bg-border-gradient {
+  background: linear-gradient(270deg, #ec4899, #8b5cf6, #f43f5e);
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+}
+.animate-shadow-glow {
+  animation: shadowGlow 6s ease-in-out infinite;
+}

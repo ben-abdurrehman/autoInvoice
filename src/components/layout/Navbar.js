@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full py-3 backdrop-blur-lg top-0 fixed z-40">
+    <header className="font-roboto w-full py-3 backdrop-blur-lg top-0 fixed z-40">
       <div className="flex items-center justify-between px-6 md:px-10 py-2">
       <Link href="/">
         <Image
