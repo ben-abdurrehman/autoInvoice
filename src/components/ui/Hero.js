@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import Invoice1 from '@/assets/InvoicesTemplates/Invoice1.png'
 import Pattern from '@/assets/Patterns/Pattern.png'
+import Link from "next/link";
 // import '@/styles/globals.css';
 
 
@@ -26,7 +27,9 @@ export default function Hero() {
         </p>
         <div className="font-jost flex justify-center gap-4">
           <button className="px-6 py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-red-500 hover:opacity-90 transition font-semibold">
+          <Link href={"/templates"}>
           Start Invoicing
+          </Link>
           </button>
           <button className="px-6 py-3 rounded-2xl border border-white hover:bg-white hover:text-black transition font-semibold">
             Learn More

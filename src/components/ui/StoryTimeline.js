@@ -5,7 +5,7 @@ const StoryTimeline = () => {
   return (
     <section className="font-roboto bg-gradient-to-br from-slate-900  via-slate-950 to-black py-8 text-white">
       <div>
-        <h2 className="text-stroke font-poppins text-2xl md:text-8xl 2xl:text-9xl font-bold text-center mb-8">How It Works</h2>
+        <h2 className="text-stroke font-poppins text-2xl md:text-5xl 2xl:text-7xl font-bold text-center mb-8">How It Works</h2>
         <p className="text-center text-lg mb-20">The four steps guidelines</p>
       </div>
       <div className="max-w-7xl mx-auto px-4">

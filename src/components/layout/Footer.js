@@ -15,13 +15,13 @@ export default function Footer() {
         <div className="w-full md:w-5/6 lg:w-4/5 xl:w-5xl 2xl:w-7xl mx-auto grid grid-cols-1 gap-8 items-center text-white">
           <div className="flex flex-col space-y-6">
             <div className="relative flex flex-col items-left">
-              <div className="relative border-dashed border-b border-gray-300 w-full flex py-5 justify-center items-center">
-                <TbScissors className="absolute text-white -left-3 w-5 h-5 top-[92%]"/>
-                <h2 className="text-stroke text-center font-poppins text-2xl md:text-8xl 2xl:text-9xl font-bold text-white">
+              <div className="relative border-dashed border-b border-gray-300 w-full flex py-5 justify-start items-center">
+                <TbScissors className="absolute text-white -left-3 w-5 h-5 top-[93%]"/>
+                <h2 className="text-stroke text-left font-poppins text-2xl md:text-5xl 2xl:text-7xl my-5 font-bold text-white">
                   AutoInvoice
                 </h2>
               </div>
-              <p className="text-gray-300 mt-2 text-sm md:text-base">
+              <p className="text-gray-300 mt-5 text-sm md:text-base">
                 Design amazing digital experiences that create more happy in the world.
               </p>
             </div>

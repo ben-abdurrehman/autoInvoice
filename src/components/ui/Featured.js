@@ -10,7 +10,7 @@ export default function FeatureAccordionSection() {
   return (
     <section className="font-roboto w-full h-[80vh]  px-4 py-12 bg-gradient-to-bl from-black via-slate-950 to-slate-900 text-white">
       <div>
-        <h2 className="font-poppins text-stroke text-2xl md:text-8xl 2xl:text-9xl font-bold text-center mb-8">Features</h2>
+        <h2 className="font-poppins text-2xl md:text-5xl 2xl:text-7xl font-bold text-center mb-8">Features</h2>
         <p className="text-center text-lg mb-20">Everything you need. Nothing you don’t.</p>
       </div>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8">

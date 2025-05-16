@@ -14,7 +14,7 @@ export default function HowWeWork() {
       className="font-roboto bg-gradient-to-bl from-black via-slate-950 to-slate-950 w-full relative py-28  overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-        <h2 className="text-stroke font-poppins text-2xl md:text-8xl 2xl:text-9xl mb-10 font-bold text-center text-white">
+        <h2 className="text-stroke font-poppins text-2xl md:text-5xl 2xl:text-7xl mb-10 font-bold text-center text-white">
           Who we are BTW?
         </h2>
       </div>

@@ -23,8 +23,8 @@
     }
     
 .text-stroke{
-  -webkit-text-stroke: 1px #c9c9c9;
-  color: transparent;
+  -webkit-text-stroke: 1px #ec4899; 
+  color: white;
   transition: all 0.3s ease-in-out;
 }
 
