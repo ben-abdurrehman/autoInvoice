@@ -3,7 +3,6 @@
 import Image from "next/image";
 
 import Invoice1 from '@/assets/InvoicesTemplates/Invoice1.png'
-import Pattern from '@/assets/Patterns/Pattern.png'
 import Link from "next/link";
 // import '@/styles/globals.css';
 

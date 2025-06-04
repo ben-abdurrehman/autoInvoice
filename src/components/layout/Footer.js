@@ -1,5 +1,3 @@
-// import "@/styles/globals.css";
-// import autoInvoiceLogo from "@/assets/all-variations/4-removedbg-Croped.png";
 'use client';
 
 

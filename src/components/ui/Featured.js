@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import { featuresImages, featuresDetails } from '@/data/objects/Features';

@@ -8,10 +8,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Feature from '@/components/ui/Featured';
 import TimelineStorySection from "@/components/ui/StoryTimeline";
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
-import Image from "next/image";
+
 
 export default function Home() {
   return (
