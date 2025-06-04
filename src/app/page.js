@@ -2,12 +2,12 @@
 
 import "@/styles/globals.css";
 
-import Hero from "@/components/ui/Hero";
-import HowWeWork from "@/components/ui/HowWeWork";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Feature from '@/components/ui/Featured';
-import TimelineStorySection from "@/components/ui/StoryTimeline";
+import Hero from "@/components/landing-page/ui/Hero";
+import HowWeWork from "@/components/landing-page/ui/HowWeWork";
+import Navbar from "@/components/landing-page/layout/Navbar";
+import Footer from "@/components/landing-page/layout/Footer";
+import Feature from '@/components/landing-page/ui/Featured';
+import TimelineStorySection from "@/components/landing-page/ui/StoryTimeline";
 
 
 

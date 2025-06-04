@@ -1,5 +1,5 @@
 import { Jost, Roboto, Poppins, Inter } from 'next/font/google';
-import { FormContextProvider } from '@/components/shared/FormContextProvider';
+import { FormContextProvider } from '@/components/web-app/shared/FormContextProvider';
 
 import "@/styles/globals.css";
 

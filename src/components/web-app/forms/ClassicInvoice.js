@@ -1,3 +1,5 @@
+"use client";
+
 export default function ClassicInvoice({ data }) {
   const subtotal = data.items.reduce((sum, item) => sum + item.quantity * item.price, 0);
   const taxAmount = data.taxEnabled ? subtotal * 0.1 : 0;

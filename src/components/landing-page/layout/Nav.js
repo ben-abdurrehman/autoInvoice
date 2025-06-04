@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import AnimatedButton from '@/components/ui/AnimatedButton';
+import AnimatedButton from '@/components/landing-page/ui/AnimatedButton';
 
 const Nav = ({ mobileClose }) => {
   return (

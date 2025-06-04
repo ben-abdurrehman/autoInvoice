@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from 'next/navigation';
-import TemplateCard from '@/components/ui/TemplateCard';
+import TemplateCard from '@/components/landing-page/ui/TemplateCard';
 import Invoice1 from '@/assets/InvoicesTemplates/Invoice1.png';
 import Invoice2 from '@/assets/InvoicesTemplates/Invoice2.png';
 import Invoice3 from '@/assets/InvoicesTemplates/Invoice3.png';

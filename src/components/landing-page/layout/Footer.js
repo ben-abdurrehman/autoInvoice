@@ -1,7 +1,6 @@
 'use client';
 
 
-import Image from "next/image";
 import { FaFacebookF, FaGithub, FaDribbble, FaLinkedinIn } from "react-icons/fa";
 import { TbScissors } from "react-icons/tb";
 import { FaXTwitter } from "react-icons/fa6";

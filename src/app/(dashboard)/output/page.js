@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormData } from '@/components/shared/FormContextProvider';
+import { useFormData } from '@/components/web-app/shared/FormContextProvider';
 import ClassicInvoice from '@/components/forms/ClassicInvoice';
 import { exportToPdf, exportToImage } from '@/lib/export';
 import { useRef } from 'react';
@@ -8,6 +8,8 @@ import { useRef } from 'react';
 export default function OutputPage() {
   const { formData } = useFormData();
   const invoiceRef = useRef();
+  console.log('Form Data:', formData);
+  
 
   return (
     <main className='w-full py-40'>
