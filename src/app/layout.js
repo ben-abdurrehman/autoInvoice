@@ -1,7 +1,8 @@
 import { Jost, Roboto, Poppins, Inter } from 'next/font/google';
+import { FormContextProvider } from '@/components/shared/FormContextProvider';
+
 import "@/styles/globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+
 
 
 const jost = Jost({
@@ -30,26 +31,12 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        />
-        <script
-          src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"
-          defer
-        />
-        <script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          async
-        ></script>
-      </head>
       <body
         className={`${jost.variable} ${poppins.variable} ${inter.variable} ${roboto.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <FormContextProvider>
+            {children}
+        </FormContextProvider>
       </body>
     </html>
   );

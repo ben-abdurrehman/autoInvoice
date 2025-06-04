@@ -8,7 +8,7 @@ export default function FeatureAccordionSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="font-roboto w-full h-[80vh]  px-4 py-12 bg-gradient-to-bl from-black via-slate-950 to-slate-900 text-white">
+    <section className="font-roboto w-full h-auto  px-4 py-12 bg-gradient-to-bl from-black via-slate-950 to-slate-900 text-white">
       <div>
         <h2 className="font-poppins text-2xl md:text-5xl 2xl:text-7xl font-bold text-center mb-8">Features</h2>
         <p className="text-center text-lg mb-20">Everything you need. Nothing you don’t.</p>
@@ -22,7 +22,7 @@ export default function FeatureAccordionSection() {
               <div key={index} className="w-full">
                 <button
                   onClick={() => setActiveIndex(index)}
-                  className={`w-full flex items-center justify-between p-4 rounded-2xl border shadow transition-all
+                  className={`w-full flex items-center justify-between p-4 rounded-xl border shadow transition-all
                     ${isActive ? 'bg-gradient-to-r from-pink-500 to-red-500 hover:opacity-90 transition text-white' : 'dark:bg-transparent backdrop-blur-3xl dark:border-gray-400 text-white hover:bg-gradient-to-r from-pink-500 to-red-500 hover:opacity-90 transition'}`}
                 >
                   <span className="text-lg font-semibold">{feature.title}</span>

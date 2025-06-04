@@ -12,9 +12,7 @@ export default function Hero() {
 
 
   return (
-    <section className="font-roboto relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white overflow-hidden">
-      {/* Animated Gradient Background */}
-      {/* <div className="absolute inset-0 z-0 animate-gradient-move bg-gradient-radial from-indigo-500 via-purple-500 to-pink-500 opacity-20 blur-3xl"></div> */}
+    <section className="font-roboto relative py-20 h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white overflow-hidden">
 
       {/* Content */}
       <div className="relative z-10 text-left flex flex-col items-start justify-center px-6 max-w-2xl">
@@ -26,14 +24,14 @@ export default function Hero() {
           AutoInvoice helps freelancers send clean, professional PDF invoices without the bloat.
         </p>
         <div className="font-jost flex justify-center gap-4">
-          <button className="px-6 py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-red-500 hover:opacity-90 transition font-semibold">
-          <Link href={"/templates"}>
+          <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-red-500 hover:opacity-90 transition font-semibold">
+          <Link href={"/create"}>
           Start Invoicing
           </Link>
           </button>
-          <button className="px-6 py-3 rounded-2xl border border-white hover:bg-white hover:text-black transition font-semibold">
+          {/* <button className="px-6 py-3 rounded-2xl border border-white hover:bg-white hover:text-black transition font-semibold">
             Learn More
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="w-auto h-[70vh] relative -right-40 overflow-hidden pointer-events-none rounded-xl p-[2px] bg-border-gradient animate-shadow-glow">
