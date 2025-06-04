@@ -1,7 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# autoInvoice
+ 
+## This is an `Invoice web-app`, using `nextjs`, and `tailwind`.
 
 ## Getting Started
 
+### You can easily `download` this repo by reaching the `code button on the top, after pressing it, click on `Download zip`.
+
+### After `Downloading` it, open in `VS Code` and write the following command in the terminal
 First, run the development server:
 
 ```bash
@@ -16,18 +21,11 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Here is some representation of my `Project name` product.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Project `autoInvoice` Landing-page](src/assets/Landing-page.png)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
