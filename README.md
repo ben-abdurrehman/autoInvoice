@@ -21,6 +21,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Here is some representation of my `Project name` product.
+### Here is some representation of autoInvoice.
 
 ![Project `autoInvoice` Landing-page](src/assets/Landing-page.png)
