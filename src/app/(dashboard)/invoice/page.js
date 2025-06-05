@@ -7,7 +7,7 @@ export default function NewInvoicePage() {
   const router = useRouter();
 
   const handleStart = () => {
-    router.push('/create');
+    router.push('/invoice/create');
   };
 
   return (

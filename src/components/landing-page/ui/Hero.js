@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import Invoice1 from '@/assets/InvoicesTemplates/Invoice1.png'
 import Link from "next/link";
+import CONSTANTS from "@/constants";
 // import '@/styles/globals.css';
 
 
@@ -24,7 +25,7 @@ export default function Hero() {
         </p>
         <div className="font-jost flex justify-center gap-4">
           <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-red-500 hover:opacity-90 transition font-semibold">
-          <Link href={"/create"}>
+          <Link href={CONSTANTS.INVOICE}>
           Start Invoicing
           </Link>
           </button>

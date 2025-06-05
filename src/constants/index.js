@@ -1,7 +1,7 @@
 const CONSTANTS = {
     HOME: '/',
     INVOICE: '/invoice',
-    CREATE_INVOICE: '/create',
+    CREATE_INVOICE: '/invoice/create',
     DASHBOARD: '/dashboard',
     SETTINGS: '/settings',
 
