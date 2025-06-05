@@ -65,7 +65,7 @@ export default function InvoiceFormPage() {
   };
 
   return (
-    <main className='w-full bg-gradient-to-br from-slate-900 via-slate-950 to-black py-40'>
+    <main className='w-full  bg-slate-950 py-10 rounded-lg  '>
         <div className="w-lg lg:w-xl 2xl:w-2xl bg-white mx-auto p-6 rounded-lg space-y-6">
         <h1 className="text-3xl font-bold">Invoice Details</h1>
         <form onSubmit={handleSubmit} className="space-y-4">

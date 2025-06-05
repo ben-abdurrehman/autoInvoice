@@ -1,7 +1,7 @@
 "use client";
 
 import { useFormData } from '@/components/web-app/shared/FormContextProvider';
-import ClassicInvoice from '@/components/forms/ClassicInvoice';
+import ClassicInvoice from '@/components/web-app/forms/ClassicInvoice';
 import { exportToPdf, exportToImage } from '@/lib/export';
 import { useRef } from 'react';
 
