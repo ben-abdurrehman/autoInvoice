@@ -22,7 +22,7 @@ export default function AppLayout({ children }) {
   return (
     <div className='flex h-screen overflow-auto'>
       {/* Sidebar */}
-      <aside className="w-60 h-[100vh] bg-slate-900 p-3 space-y-6">
+      <aside className="w-60 h-[100vh] bg-slate-900 pr-0 p-3 space-y-6">
         <div className='w-full h-full flex flex-col gap-10 bg-slate-950 p-3 py-4 rounded-lg'>
           <Link href={CONSTANTS.HOME}>
             <Image
@@ -41,7 +41,7 @@ export default function AppLayout({ children }) {
                 href={link.href}
                 className={clsx(
                   'flex items-center justify-start px-4 py-2 rounded hover:border hover:border-green-400 text-green-400',
-                  (pathname === link.href) ? 'border border-green-400 font-semibold' : 'border border-transparent'
+                  (pathname.startsWith(link.href)) ? 'border border-green-400 font-semibold' : 'border border-transparent'
                 )}
               >
                 {link.icon}
@@ -53,7 +53,7 @@ export default function AppLayout({ children }) {
       </aside>
 
       {/* Main Content */}
-      <main className="w-[calc(100%-200px)] flex items-center p-3 bg-slate-900 overflow-y-auto">
+      <main className="w-[calc(100%-200px)] h-full flex items-center justify-center p-3 bg-slate-900 overflow-y-auto">
         {children}
       </main>
     </div>

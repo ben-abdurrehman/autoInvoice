@@ -11,7 +11,7 @@ export default function NewInvoicePage() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center  overflow-hidden py-32 text-center space-y-6">
+    <div className="w-full flex flex-col items-center justify-center bg-slate-950 h-full rounded-lg overflow-hidden py-32 text-center space-y-6">
       <h1 className="text-3xl font-bold text-white">Ready to create your first invoice?</h1>
       <p className="text-gray-300">Click the button below to start building your invoice using our clean template.</p>
       <button
