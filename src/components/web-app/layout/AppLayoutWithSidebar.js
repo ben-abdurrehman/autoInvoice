@@ -8,22 +8,23 @@ import { IoSettings } from "react-icons/io5";
 import { RiDashboardFill } from "react-icons/ri";
 import Image from 'next/image';
 import clsx from 'clsx';
+import CONSTANTS from '@/constants';
 
 const links = [
-  { href: '/dashboard', label: 'Dashboard', icon: <RiDashboardFill className="inline-block mr-2" /> },
-  { href: '/invoice', label: 'Invoices', icon: <FaFileInvoiceDollar className="inline-block mr-2" /> },
-  { href: '/settings', label: 'Settings', icon: <IoSettings className="inline-block mr-2" /> },
+  { href: CONSTANTS.DASHBOARD, label: 'Dashboard', icon: <RiDashboardFill className="inline-block mr-2" /> },
+  { href: CONSTANTS.INVOICE, label: 'Invoices', icon: <FaFileInvoiceDollar className="inline-block mr-2" /> },
+  { href: CONSTANTS.SETTINGS, label: 'Settings', icon: <IoSettings className="inline-block mr-2" /> },
 ];
 
 export default function AppLayout({ children }) {
   const pathname = usePathname();
 
   return (
-    <div className="flex min-h-screen">
+    <div className='flex h-screen overflow-auto'>
       {/* Sidebar */}
-      <aside className="w-60 h-[100vh] fixed bg-slate-900 p-3 space-y-6">
+      <aside className="w-60 h-[100vh] bg-slate-900 p-3 space-y-6">
         <div className='w-full h-full flex flex-col gap-10 bg-slate-950 p-3 py-4 rounded-lg'>
-          <Link href="/">
+          <Link href={CONSTANTS.HOME}>
             <Image
               src={autoInvoiceLogo}
               alt="logo"
@@ -52,7 +53,7 @@ export default function AppLayout({ children }) {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-3 bg-slate-900 overflow-y-auto">
+      <main className="w-[calc(100%-200px)] flex items-center p-3 bg-slate-900 overflow-y-auto">
         {children}
       </main>
     </div>
