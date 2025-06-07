@@ -231,7 +231,7 @@ export default function InvoiceFormPage() {
 
   return (
     <main className=' w-full h-full overflow-auto bg-slate-950 py-10 rounded-lg'>
-        <div className="w-lg lg:w-xl 2xl:w-2xl bg-white mx-auto p-6 rounded-lg space-y-6">
+        <div className="w-lg lg:w-xl 2xl:w-2xl text-white mx-auto p-6 rounded-lg space-y-6">
         <h1 className="text-3xl font-bold">Invoice Details</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
             <input className="w-full border p-2 rounded" placeholder="Business Name" value={form.businessName} onChange={(e) => setForm({ ...form, businessName: e.target.value })} readOnly={isReadOnly('businessName')} />
@@ -278,7 +278,7 @@ export default function InvoiceFormPage() {
             </div>
             ))}
             {errors.items && <p className="text-red-500 text-sm">{errors.items}</p>}
-            <button type="button" onClick={addItem} className="bg-blue-600 text-white px-4 py-2 rounded">+ Add Item</button>
+            <button type="button" onClick={addItem} className="cursor-pointer  bg-blue-600 text-white text-lg border border-transparent hover:bg-transparent hover:border-blue-600 transition duration-300 shadow-lg hover:shadow-xl active:scale-95 px-4 py-2 rounded">+ Add Item</button>
 
             <textarea className="w-full border p-2 rounded mt-4" placeholder="Payment Notes (e.g. Pay within 15 days)" value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} />
 
@@ -294,7 +294,7 @@ export default function InvoiceFormPage() {
             <span>Include Tax (10%)</span>
             </label>
 
-            <button type="submit" className="mt-6 w-full cursor-pointer  bg-green-400 text-white text-lg border border-transparent hover:bg-transparent hover:border-green-500 hover:text-green-400 transition duration-300 active:scale-95 py-3 rounded font-semibold">Finish & Continue</button>
+            <button type="submit" className="mt-6 w-full cursor-pointer  bg-green-400 text-white text-lg border border-transparent hover:bg-transparent hover:border-green-500 transition duration-300 active:scale-95 py-3 rounded font-semibold">Finish & Continue</button>
         </form>
         </div>
     </main>

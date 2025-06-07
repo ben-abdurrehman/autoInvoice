@@ -28,7 +28,7 @@ export default function ContactUs() {
             Get in touch with our team
           </h2>
           <p className="text-gray-600 text-center lg:text-left mt-2 text-sm sm:text-base">
-            We'd love to hear from you. Please fill out this form or shoot us an
+            We would love to hear from you. Please fill out this form or shoot us an
             email.
           </p>
 

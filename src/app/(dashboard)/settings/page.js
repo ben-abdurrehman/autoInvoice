@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useLocalStorage } from '@/components/web-app/shared/useLocalStorage';
 import toast from 'react-hot-toast';
+import Image from 'next/image';
 
 const defaultSettings = {
   companyName: '',
@@ -49,7 +50,7 @@ export default function SettingsPage() {
 
   return (
     <main className="w-full bg-slate-950 h-full overflow-auto rounded-lg text-white p-6 space-y-6">
-      <div className='max-w-3xl flex flex-col mx-auto'>
+      <div className='w-lg lg:w-xl 2xl:w-2xl flex flex-col gap-10 mx-auto'>
         <h1 className="text-3xl font-bold">Business Settings</h1>
         <form className="space-y-4" onSubmit={handleSubmit}>
             <input type="text" name="companyName" placeholder="Company Name" value={formData.companyName} onChange={handleChange} className="w-full border p-2 rounded" />
@@ -67,7 +68,7 @@ export default function SettingsPage() {
             <div>
             <label className="block font-medium mb-1">Logo Upload</label>
             <input type="file" accept="image/*" onChange={handleLogoUpload} className="block" />
-            {formData.logo && <img src={formData.logo} alt="Logo Preview" className="mt-2 h-20 object-contain" />}
+            {formData.logo && <Image src={formData.logo} alt="Logo Preview" className="mt-2 h-20 object-contain" />}
             </div>
 
             <div className="flex gap-4">
